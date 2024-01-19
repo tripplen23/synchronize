@@ -1,6 +1,6 @@
 {
-  "name": "wibe-test",
-  "version": "0.1.0",
+  "name": "synchronize-client",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@fontsource/kaushan-script": "^4.5.2",
