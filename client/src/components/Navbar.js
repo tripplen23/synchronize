@@ -103,13 +103,13 @@ const Navbar = () => {
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, Y: 0 }}
         >
-          Artists
+          Latest Releases
         </MenuItem>
         <MenuItem
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, Y: 0 }}
         >
-          Latest Releases
+          Artists
         </MenuItem>
       </MenuItems>
     </NavContainer>
