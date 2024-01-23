@@ -10,6 +10,8 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import LatestRelease from "./sections/LatestReleases";
 
+import ScrollTriggerProxy from "./utils/ScrollTriggerProxy";
+
 function App() {
   const containerRef = useRef(null);
   return (
@@ -31,8 +33,9 @@ function App() {
           }
           containerRef={containerRef}
         >
+          <ScrollTriggerProxy />
           <AnimatePresence>
-            <main data-scroll-container ref={containerRef}>
+            <main className="App" data-scroll-container ref={containerRef}>
               <Home />
               <About />
               <LatestRelease />
