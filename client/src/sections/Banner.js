@@ -31,15 +31,13 @@ const BannerComponent = styled.h1`
   line-height: 1;
   &:nth-of-type(3) {
     color: ${(props) => props.theme.grey};
+    background-color: red;
   }
 
   span {
     display: block;
     background-color: ${(props) => props.theme.body};
     padding: 1rem 2rem;
-    &:nth-of-type(3) {
-      background-color: ${(props) => props.theme.redRgba};
-    }
   }
 `;
 

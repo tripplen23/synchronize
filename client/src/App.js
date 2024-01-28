@@ -10,6 +10,7 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import LatestRelease from "./sections/LatestReleases";
 import Banner from "./sections/Banner";
+import Artists from "./sections/Artists";
 
 import ScrollTriggerProxy from "./utils/ScrollTriggerProxy";
 
@@ -41,6 +42,7 @@ function App() {
               <About />
               <LatestRelease />
               <Banner />
+              <Artists />
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>

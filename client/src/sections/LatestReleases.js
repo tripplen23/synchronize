@@ -23,7 +23,7 @@ const Section = styled.section`
   overflow: hidden;
 
   display: flex;
-  justify-content: flex-start;
+  //justify-content: flex-start;
   align-items: flex-start;
   position: relative;
 `;
@@ -137,7 +137,7 @@ const LatestRelease = () => {
           scroller: ".App", // locomotive element
           scrub: true,
           pin: true,
-          markers: true,
+          //markers: true,
         },
         // TODO: We have to increase scrolling height of this section same as the scrolling element width
         height: `${scrollingElement.scrollWidth}px`,
@@ -152,6 +152,7 @@ const LatestRelease = () => {
           end: pinWrapWidth,
           scroller: ".App", // locomotive element
           scrub: true,
+          //markers: true,
         },
         // TODO: We have to increase scrolling height of this section same as the scrolling element width
         x: -pinWrapWidth,
@@ -160,7 +161,11 @@ const LatestRelease = () => {
       ScrollTrigger.refresh();
     }, 1000);
 
-    return () => {};
+    return () => {
+      // Let's clear instances
+      t1.kill();
+      ScrollTrigger.kill();
+    };
   }, []);
 
   return (
