@@ -4,6 +4,7 @@ export const dark = {
   text: "#fff",
   bodyRgba: "32,32,32",
   textRgba: "255,255,255",
+  redRgba: "189,40,40",
 
   grey: "#bebebe", // grey shade
 
